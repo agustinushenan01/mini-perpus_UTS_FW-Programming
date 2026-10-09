@@ -1,27 +1,46 @@
+# File Editor dan OS
 *.log
 .DS_Store
+Thumbs.db
+.phpactor.json
+/.idea
+/.nova
+/.vscode
+/.zed
+/.cursor/
+/.codex
+
+# Environment dan Dokumen Rahasia
 .env
 .env.backup
 .env.production
-.phpactor.json
-.phpunit.result.cache
-/.codex
-/.cursor/
-/.idea
-/.nova
-/.phpunit.cache
-/.vscode
-/.zed
-/auth.json
-/node_modules
+auth.json
+storage/*.key
+
+# Node & Composer Dependencies
+/vendor/
+/node_modules/
+npm-debug.log
+yarn-error.log
+
+# Laravel Standar
 /public/build
-/public/fonts-manifest.dev.json
 /public/hot
 /public/storage
-/storage/*.key
 /storage/pail
-/vendor
 _ide_helper.php
+
+# Jalur Laravel Lama / Custom (Simpan jika memakai public_html)
+bootstrap/compiled.php
+app/storage/
+public_html/storage
+public_html/hot
+
+# Testing / Cache
+.phpunit.result.cache
+/.phpunit.cache
+
+# Vagrant / Homestead
 Homestead.json
 Homestead.yaml
-Thumbs.db
+/.vagrant
